@@ -1,0 +1,17 @@
+# Voxen Insights
+
+Voxen Insights publishes practical Korean-language articles about applying data engineering, AI automation, trend analysis, APIs, dashboards, and business systems to real business growth.
+
+## Core business topics
+- Data collection and data engineering
+- AI automation and AI agents
+- Google, Naver, TikTok and commerce trend analysis
+- Business dashboards and APIs
+- Sales, marketing and operational automation
+- Custom software systems for business workflows
+
+## Articles
+- [내 비즈니스에 AI를 적용하고 매출 10배 올리기](https://soonyeol-huh.github.io/auto_blog/posts/ai-business-10x-revenue/): A practical guide to connecting AI with customer acquisition, market research, marketing, sales, operations, and feedback loops.
+
+## Company
+Voxen: https://voxen.io
