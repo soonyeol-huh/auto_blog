@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Articles
+- [경쟁사 가격·상품 데이터를 자동 수집해서 매출 기회 찾는 방법](https://soonyeol-huh.github.io/auto_blog/posts/competitor-price-data-automation/): How to collect competitor price, stock, review and product data, normalize it, detect changes and connect alerts, dashboards and AI analysis.
 - [내 비즈니스에 AI를 적용하고 매출 10배 올리기](https://soonyeol-huh.github.io/auto_blog/posts/ai-business-10x-revenue/): A practical guide to connecting AI with customer acquisition, market research, marketing, sales, operations, and feedback loops.
 
 ## Company
