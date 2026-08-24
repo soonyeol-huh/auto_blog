@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>사내 엑셀·ERP 데이터를 API로 연결하는 방법 | Voxen Insights</title>
+<meta name="description" content="엑셀, ERP, 쇼핑몰, CRM에 흩어진 데이터를 API와 데이터 파이프라인으로 연결하는 실무 방법을 설명합니다. 동기화 구조, 보안, 장애 대응, 대시보드·AI 연결까지 다룹니다.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://soonyeol-huh.github.io/auto_blog/posts/excel-erp-api-integration/">
+<link rel="stylesheet" href="/auto_blog/assets/style.css">
+<meta property="og:type" content="article"><meta property="og:title" content="사내 엑셀·ERP 데이터를 API로 연결하는 방법"><meta property="og:description" content="흩어진 업무 데이터를 자동으로 연결해 반복 복사·붙여넣기를 없애는 데이터 통합 설계법"><meta property="og:url" content="https://soonyeol-huh.github.io/auto_blog/posts/excel-erp-api-integration/">
+<meta property="article:published_time" content="2026-08-24T20:43:00+09:00">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"사내 엑셀·ERP 데이터를 API로 연결하는 방법","description":"엑셀, ERP, 쇼핑몰, CRM 데이터를 API와 데이터 파이프라인으로 연결하는 실무 가이드","datePublished":"2026-08-24T20:43:00+09:00","dateModified":"2026-08-24T20:43:00+09:00","inLanguage":"ko-KR","author":{"@type":"Organization","name":"Voxen"},"publisher":{"@type":"Organization","name":"Voxen","url":"https://voxen.io"},"mainEntityOfPage":"https://soonyeol-huh.github.io/auto_blog/posts/excel-erp-api-integration/","keywords":["ERP API 연동","엑셀 자동화","데이터 통합","API 개발","데이터 파이프라인","업무 자동화"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ERP가 API를 제공하지 않으면 연동할 수 없나요?","acceptedAnswer":{"@type":"Answer","text":"가능합니다. 데이터베이스 읽기, 정기 파일 내보내기, SFTP, RPA 등을 사용할 수 있습니다. 다만 공식 API나 읽기 전용 DB 접근이 가능하다면 유지보수와 안정성 면에서 우선 고려하는 것이 좋습니다."}},{"@type":"Question","name":"엑셀 파일도 자동으로 데이터베이스에 넣을 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"가능합니다. 지정 폴더나 클라우드 저장소의 파일을 감지해 컬럼 검증, 형식 변환, 중복 제거 후 데이터베이스에 적재하는 파이프라인을 만들 수 있습니다."}},{"@type":"Question","name":"실시간 연동이 항상 좋은가요?","acceptedAnswer":{"@type":"Answer","text":"아닙니다. 재고나 주문처럼 즉시성이 중요한 데이터는 실시간이 유리하지만 경영 리포트나 일별 매출처럼 수분 또는 수시간 단위로 충분한 데이터는 배치 방식이 더 단순하고 안정적일 수 있습니다."}}]}</script>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="/auto_blog/">VOXEN <span>INSIGHTS</span></a><a href="https://voxen.io">Voxen</a></div></header>
+<main class="wrap article">
+<p class="eyebrow">DATA INTEGRATION · 2026.08.24</p>
+<h1>사내 엑셀·ERP 데이터를 API로 연결하는 방법</h1>
+<p class="lead">회사에 데이터는 많은데 정작 매일 사람이 엑셀을 내려받고, 붙여넣고, 다시 보고서를 만들고 있나요? 그렇다면 AI보다 먼저 해야 할 일은 <strong>데이터가 스스로 움직이게 만드는 것</strong>입니다.</p>
+<p>ERP, 쇼핑몰, CRM, 광고 플랫폼, 엑셀 파일은 각각 따로 보면 멀쩡합니다. 문제는 서로 연결되지 않을 때 생깁니다. 매출은 ERP에 있고, 광고비는 광고 플랫폼에 있고, 목표치는 엑셀에 있다면 매일 누군가가 데이터를 모아야 하죠. 이 반복을 API와 데이터 파이프라인으로 바꾸면 이후 대시보드와 AI 자동화까지 훨씬 쉬워집니다.</p>
+
+<figure class="visual" role="img" aria-label="엑셀 ERP 쇼핑몰 CRM 데이터를 API와 데이터 파이프라인을 통해 통합 데이터베이스, 대시보드, AI로 연결하는 구조">
+<svg viewBox="0 0 900 330" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="20" y="35" width="150" height="55" rx="12" fill="#eef2ff"/><text x="95" y="68" text-anchor="middle" font-size="20">Excel</text><rect x="20" y="120" width="150" height="55" rx="12" fill="#eef2ff"/><text x="95" y="153" text-anchor="middle" font-size="20">ERP</text><rect x="20" y="205" width="150" height="55" rx="12" fill="#eef2ff"/><text x="95" y="238" text-anchor="middle" font-size="20">CRM · 쇼핑몰</text><path d="M180 148 L300 148" stroke="currentColor" stroke-width="3"/><rect x="300" y="95" width="190" height="105" rx="16" fill="#f4f4f5"/><text x="395" y="138" text-anchor="middle" font-size="19">API · ETL</text><text x="395" y="168" text-anchor="middle" font-size="16">검증 · 정규화 · 동기화</text><path d="M500 148 L610 148" stroke="currentColor" stroke-width="3"/><rect x="610" y="50" width="250" height="55" rx="12" fill="#ecfeff"/><text x="735" y="83" text-anchor="middle" font-size="18">통합 데이터베이스</text><rect x="610" y="130" width="250" height="55" rx="12" fill="#ecfeff"/><text x="735" y="163" text-anchor="middle" font-size="18">대시보드 · 알림</text><rect x="610" y="210" width="250" height="55" rx="12" fill="#ecfeff"/><text x="735" y="243" text-anchor="middle" font-size="18">AI 분석 · 자동 실행</text></svg>
+<figcaption>핵심은 각 시스템을 무작정 서로 연결하는 게 아니라, 중간에 검증·정규화 계층을 두는 것입니다.</figcaption>
+</figure>
+
+<h2>가장 먼저 “복사·붙여넣기 업무”부터 찾으세요</h2>
+<p>데이터 통합 프로젝트를 어렵게 생각할 필요는 없습니다. 매일 또는 매주 누군가가 하는 아래 업무부터 찾으면 됩니다.</p>
+<ul><li>ERP 매출을 엑셀로 내려받아 주간 보고서에 붙여넣기</li><li>쇼핑몰 주문을 회계 시스템에 다시 입력하기</li><li>광고비와 매출을 수동으로 맞춰 ROAS 계산하기</li><li>재고 부족 상품을 엑셀 필터로 찾아 메신저에 공유하기</li><li>고객 문의와 구매 이력을 별도 화면에서 번갈아 확인하기</li></ul>
+<p>이런 작업은 사람이 판단해야 해서 하는 경우보다 <strong>시스템이 서로 데이터를 못 주고받아서</strong> 사람이 중간 전달자 역할을 하는 경우가 많습니다.</p>
+
+<h2>API 연동은 세 단계로 생각하면 쉽습니다</h2>
+<h3>1. 데이터를 가져온다</h3>
+<p>가장 좋은 방법은 해당 서비스가 제공하는 공식 API를 사용하는 것입니다. API가 없다면 읽기 전용 데이터베이스, 정기 CSV 내보내기, SFTP, 클라우드 폴더 감지 같은 방식도 사용할 수 있습니다.</p>
+<h3>2. 데이터를 같은 형태로 맞춘다</h3>
+<p>실무에서는 여기서 가장 많은 문제가 생깁니다. 한 시스템의 상품번호가 <code>A-100</code>인데 다른 시스템에는 <code>100A</code>로 되어 있거나, 날짜 형식과 부가세 처리 방식이 다를 수 있습니다.</p>
+<p>따라서 가져온 데이터를 바로 쓰기보다 컬럼명, 타입, 단위, 코드값, 시간대, 중복을 표준화하는 과정이 필요합니다.</p>
+<h3>3. 필요한 곳으로 보낸다</h3>
+<p>정리된 데이터는 데이터베이스, 대시보드, Slack/메일 알림, 다른 업무 시스템, AI 에이전트로 전달할 수 있습니다. 이 단계부터 단순 연동이 실제 업무 자동화로 바뀝니다.</p>
+
+<h2>실시간 연동과 배치 연동, 무엇이 맞을까요?</h2>
+<table><thead><tr><th>업무</th><th>추천 방식</th><th>이유</th></tr></thead><tbody><tr><td>주문 접수</td><td>실시간 또는 수분 단위</td><td>처리가 늦으면 고객 경험에 영향</td></tr><tr><td>재고 부족 알림</td><td>수분~시간 단위</td><td>빠른 대응 필요</td></tr><tr><td>일별 매출 리포트</td><td>배치</td><td>하루 1~몇 회면 충분</td></tr><tr><td>월 경영 보고서</td><td>배치</td><td>복잡도보다 정확성이 중요</td></tr></tbody></table>
+<p>모든 데이터를 실시간으로 만들면 멋있어 보이지만 비용과 장애 지점도 늘어납니다. <strong>업무가 요구하는 속도만큼만 빠르게</strong> 만드는 게 좋습니다.</p>
+
+<h2>엑셀도 충분히 자동화할 수 있습니다</h2>
+<p>“우리는 ERP보다 엑셀을 더 많이 쓰는데요?”라고 해도 괜찮습니다. 특정 Google Drive나 OneDrive 폴더에 파일을 올리면 자동으로 읽어서 데이터베이스에 넣는 방식도 흔히 사용할 수 있습니다.</p>
+<div class="callout"><strong>예시</strong><br>각 지점 담당자가 매일 매출 엑셀을 폴더에 업로드 → 시스템이 신규 파일 감지 → 컬럼과 데이터 형식 검사 → 중복 제거 → 통합 DB 저장 → 전국 지점 대시보드 자동 업데이트</div>
+<p>직원 입장에서는 기존 업무를 거의 바꾸지 않으면서, 본사에서는 통합 데이터를 자동으로 받을 수 있습니다. 처음부터 모든 시스템을 갈아엎는 것보다 이런 방식이 훨씬 현실적일 때가 많습니다.</p>
+
+<h2>연동에서 가장 중요한 건 ‘성공’보다 ‘실패 처리’입니다</h2>
+<p>API는 언젠가 실패합니다. 네트워크가 끊기거나 상대 서비스가 점검에 들어갈 수도 있고, 예상하지 못한 데이터가 들어올 수도 있습니다.</p>
+<p>그래서 운영 시스템에는 최소한 다음이 필요합니다.</p>
+<ul><li>실패한 요청 자동 재시도</li><li>중복 저장 방지</li><li>오류 데이터 별도 격리</li><li>연동 실패 알림</li><li>언제 어떤 데이터가 들어왔는지 로그 기록</li><li>API 키와 개인정보의 안전한 관리</li></ul>
+<p>초기 데모는 데이터를 한 번 가져오는 것만으로도 성공처럼 보입니다. 하지만 실제 회사에서 중요한 건 <strong>6개월 뒤에도 사람이 신경 쓰지 않고 계속 돌아가는가</strong>입니다.</p>
+
+<h2>데이터가 연결되면 AI가 갑자기 실용적으로 바뀝니다</h2>
+<p>AI가 회사 데이터를 모르는 상태에서는 일반적인 답변밖에 할 수 없습니다. 반대로 매출, 재고, 광고, 고객 문의가 연결되어 있다면 질문 자체가 달라집니다.</p>
+<div class="callout"><strong>가능한 질문</strong><br>“지난 7일간 광고비가 늘었는데 매출이 줄어든 상품을 찾아줘.”<br>“재고가 2주 안에 부족해질 가능성이 높은 상품을 알려줘.”<br>“VIP 고객 중 최근 구매 빈도가 크게 떨어진 고객을 찾아줘.”</div>
+<p>즉, AI 프로젝트의 기초 공사는 프롬프트가 아니라 데이터 연결일 때가 많습니다.</p>
+
+<h2>어디부터 연결해야 할지 모르겠다면</h2>
+<p>Voxen에서는 ERP, 쇼핑몰, 외부 API, 엑셀 파일처럼 서로 다른 데이터 소스를 연결해 수집·정제·저장하고, 이후 API·대시보드·AI 자동화까지 이어지는 구조를 설계할 수 있습니다.</p>
+<p>처음부터 거대한 데이터 플랫폼을 만들 필요는 없습니다. 가장 시간이 많이 드는 반복 업무 하나를 골라 <strong>작은 파이프라인 하나</strong>부터 만드는 편이 성공 가능성이 높습니다.</p>
+
+<h2>FAQ</h2>
+<h3>ERP가 API를 제공하지 않으면 연동할 수 없나요?</h3><p>가능합니다. 읽기 전용 DB, 정기 파일 내보내기, SFTP, RPA 등을 대안으로 사용할 수 있습니다. 가능하면 유지보수가 쉬운 공식 인터페이스를 우선하는 편이 좋습니다.</p>
+<h3>엑셀 파일도 자동으로 데이터베이스에 넣을 수 있나요?</h3><p>가능합니다. 지정 폴더에 올라온 파일을 감지해 컬럼 검증, 형식 변환, 중복 제거 후 자동 적재할 수 있습니다.</p>
+<h3>실시간 연동이 항상 좋은가요?</h3><p>아닙니다. 주문처럼 즉시성이 중요한 데이터와 월간 리포트처럼 배치가 더 적합한 데이터는 요구사항이 다릅니다. 필요한 속도에 맞춰 설계해야 비용과 안정성을 함께 잡을 수 있습니다.</p>
+</main>
+<footer><div class="wrap">© 2026 Voxen · Data Engineering · API Integration · AI Automation</div></footer>
+</body></html>
