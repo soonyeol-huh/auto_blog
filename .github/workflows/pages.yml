@@ -25,6 +25,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Normalize site for custom domain
+        shell: bash
+        run: |
+          find site -type f \( -name '*.html' -o -name '*.xml' -o -name '*.txt' -o -name '*.css' -o -name '*.js' -o -name '*.svg' \) -print0 \
+            | xargs -0 sed -i \
+              -e 's#https://soonyeol-huh.github.io/auto_blog#https://insights.voxen.io#g' \
+              -e 's#http://soonyeol-huh.github.io/auto_blog#https://insights.voxen.io#g' \
+              -e 's#/auto_blog/#/#g'
+          printf '%s\n' 'insights.voxen.io' > site/CNAME
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
