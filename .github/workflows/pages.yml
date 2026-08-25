@@ -36,6 +36,17 @@ jobs:
               -e 's#/auto_blog/#/#g'
           printf '%s\n' 'insights.voxen.io' > site/CNAME
 
+      - name: Render social share PNG images
+        shell: bash
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq librsvg2-bin fonts-noto-cjk
+          shopt -s nullglob
+          for src in site/assets/*-og.svg; do
+            out="${src%.svg}.png"
+            rsvg-convert -w 1200 -h 630 "$src" -o "$out"
+          done
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
