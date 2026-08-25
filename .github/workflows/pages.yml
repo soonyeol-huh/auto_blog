@@ -34,6 +34,7 @@ jobs:
               -e 's#https://soonyeol-huh.github.io/auto_blog#https://insights.voxen.io#g' \
               -e 's#http://soonyeol-huh.github.io/auto_blog#https://insights.voxen.io#g' \
               -e 's#/auto_blog/#/#g'
+          sed -i 's#https://insights.voxen.io/assets/ai-needs-company-data.svg#https://insights.voxen.io/assets/ai-needs-company-data-og.png#g' site/posts/why-ai-needs-company-data/index.html
           printf '%s\n' 'insights.voxen.io' > site/CNAME
 
       - name: Render social share PNG images
