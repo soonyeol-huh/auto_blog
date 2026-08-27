@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Articles
+- [매일 만드는 보고서, AI가 대신 만들 수 있을까?](https://insights.voxen.io/posts/ai-repetitive-reporting/): A beginner-friendly guide to automating repetitive reporting by separating reliable data collection and calculations from AI-generated explanations and summaries.
 - [AI 자동화, 얼마 벌어야 본전일까?](https://insights.voxen.io/posts/ai-automation-roi/): A practical guide to estimating AI automation ROI using time savings, business gains, model/API costs, operations and maintenance costs before moving from PoC to production.
 - [AI로 뭘 자동화해야 할까? 30분만 재보면 보입니다](https://insights.voxen.io/posts/ai-first-task-30-minutes/): A beginner-friendly way to identify the first automation candidate by measuring time spent on repetitive work before choosing AI tools.
 - [AI PoC는 됐는데, 왜 현업에서 멈출까?](https://insights.voxen.io/posts/ai-poc-to-production/): How to move an AI proof of concept into production by addressing data integration, access control, exception handling, logging, quality, cost and ROI.
