@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Articles
+- [고객 문의, AI에게 어디까지 맡겨도 될까?](https://insights.voxen.io/posts/ai-customer-support-automation/): A beginner-friendly guide to deciding which customer inquiries AI can handle, when human review is needed, and why order, inventory and CRM data connections matter.
 - [AI 에이전트, 챗봇에서 멈추면 업무가 자동화되지 않습니다](https://insights.voxen.io/posts/ai-agent-erp-crm-integration/): How to connect AI agents with ERP, CRM, Excel and internal APIs using scoped permissions, human approval, logs and exception handling so AI can participate in real business workflows.
 - [매일 만드는 보고서, AI가 대신 만들 수 있을까?](https://insights.voxen.io/posts/ai-repetitive-reporting/): A beginner-friendly guide to automating repetitive reporting by separating reliable data collection and calculations from AI-generated explanations and summaries.
 - [AI 자동화, 얼마 벌어야 본전일까?](https://insights.voxen.io/posts/ai-automation-roi/): A practical guide to estimating AI automation ROI using time savings, business gains, model/API costs, operations and maintenance costs before moving from PoC to production.
