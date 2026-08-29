@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Articles
+- [AI 외주 업체, 제안서에서 무엇을 봐야 할까?](https://insights.voxen.io/posts/ai-vendor-proposal-checklist/): A practical buyer checklist for comparing AI implementation proposals by workflow scope, data integration, permissions, failure handling, total cost, operations and handover conditions.
 - [회의 끝나고 정리하느라 또 30분 쓰고 있나요?](https://insights.voxen.io/posts/ai-meeting-notes-automation/): A beginner-friendly guide to automating meeting transcription, summaries, decisions, owners and action items while keeping human review and data security in the loop.
 - [AI 에이전트 구축 비용, 무엇이 견적을 바꿀까?](https://insights.voxen.io/posts/ai-agent-cost-guide/): A practical buyer's guide to the factors that drive AI agent project cost, including data integration, ERP/CRM APIs, permissions, approvals, operations and project scope.
 - [고객 문의, AI에게 어디까지 맡겨도 될까?](https://insights.voxen.io/posts/ai-customer-support-automation/): A beginner-friendly guide to deciding which customer inquiries AI can handle, when human review is needed, and why order, inventory and CRM data connections matter.
