@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Articles
+- [회의 끝나고 정리하느라 또 30분 쓰고 있나요?](https://insights.voxen.io/posts/ai-meeting-notes-automation/): A beginner-friendly guide to automating meeting transcription, summaries, decisions, owners and action items while keeping human review and data security in the loop.
 - [AI 에이전트 구축 비용, 무엇이 견적을 바꿀까?](https://insights.voxen.io/posts/ai-agent-cost-guide/): A practical buyer's guide to the factors that drive AI agent project cost, including data integration, ERP/CRM APIs, permissions, approvals, operations and project scope.
 - [고객 문의, AI에게 어디까지 맡겨도 될까?](https://insights.voxen.io/posts/ai-customer-support-automation/): A beginner-friendly guide to deciding which customer inquiries AI can handle, when human review is needed, and why order, inventory and CRM data connections matter.
 - [AI 에이전트, 챗봇에서 멈추면 업무가 자동화되지 않습니다](https://insights.voxen.io/posts/ai-agent-erp-crm-integration/): How to connect AI agents with ERP, CRM, Excel and internal APIs using scoped permissions, human approval, logs and exception handling so AI can participate in real business workflows.
