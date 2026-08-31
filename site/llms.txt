@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Articles
+- [직원들이 ChatGPT를 쓰는데, 왜 회사 일은 그대로일까?](https://insights.voxen.io/posts/chatgpt-vs-business-automation/): A beginner-friendly guide explaining the difference between individual ChatGPT use and real business automation, and why data and system connections are needed to change workflows.
 - [AI 외주 계약서, 구축 전에 꼭 정해야 할 7가지](https://insights.voxen.io/posts/ai-outsourcing-contract-checklist/): A practical contract checklist covering data ownership, source code handover, external API costs, account ownership, acceptance criteria and maintenance conditions for AI outsourcing projects.
 - [메일·메신저가 쌓여 중요한 일을 놓치고 있나요?](https://insights.voxen.io/posts/ai-email-message-triage/): A beginner-friendly guide to using AI to triage email and workplace messages into urgent items, tasks, replies and reference material before considering automatic responses.
 - [AI 외주 업체, 제안서에서 무엇을 봐야 할까?](https://insights.voxen.io/posts/ai-vendor-proposal-checklist/): A practical buyer checklist for comparing AI implementation proposals by workflow scope, data integration, permissions, failure handling, total cost, operations and handover conditions.
