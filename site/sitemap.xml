@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://insights.voxen.io/</loc><lastmod>2026-08-31</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://insights.voxen.io/posts/chatgpt-vs-business-automation/</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-outsourcing-contract-checklist/</loc><lastmod>2026-08-30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-email-message-triage/</loc><lastmod>2026-08-30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-vendor-proposal-checklist/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-meeting-notes-automation/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-agent-cost-guide/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-customer-support-automation/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-agent-erp-crm-integration/</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-repetitive-reporting/</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-automation-roi/</loc><lastmod>2026-08-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-first-task-30-minutes/</loc><lastmod>2026-08-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-poc-to-production/</loc><lastmod>2026-08-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/why-ai-needs-company-data/</loc><lastmod>2026-08-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/where-to-start-ai-business/</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/excel-erp-api-integration/</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/market-trend-data-dashboard/</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/competitor-price-data-automation/</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://insights.voxen.io/posts/ai-business-10x-revenue/</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/</loc><lastmod>2026-08-31</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://insights.voxen.io/posts/company-data-llm-security/</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/chatgpt-vs-business-automation/</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-outsourcing-contract-checklist/</loc><lastmod>2026-08-30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-email-message-triage/</loc><lastmod>2026-08-30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-vendor-proposal-checklist/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-meeting-notes-automation/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-agent-cost-guide/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-customer-support-automation/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-agent-erp-crm-integration/</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-repetitive-reporting/</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-automation-roi/</loc><lastmod>2026-08-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-first-task-30-minutes/</loc><lastmod>2026-08-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-poc-to-production/</loc><lastmod>2026-08-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/why-ai-needs-company-data/</loc><lastmod>2026-08-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/where-to-start-ai-business/</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/excel-erp-api-integration/</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/market-trend-data-dashboard/</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/competitor-price-data-automation/</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://insights.voxen.io/posts/ai-business-10x-revenue/</loc><lastmod>2026-08-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
 </urlset>
