@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Articles
+- [ERP·CRM·엑셀을 AI에 연결하려면, 데이터 파이프라인부터 설계해야 합니다](https://insights.voxen.io/posts/ai-data-pipeline-erp-crm-excel/): A practical architecture guide for collecting, normalizing, validating and serving ERP, CRM, Excel and SaaS data through controlled APIs so AI agents and dashboards use consistent business data.
 - [AI가 하면 안 되는 일도 있습니다: 사람 확인이 꼭 필요한 업무는?](https://insights.voxen.io/posts/ai-human-review-guide/): A beginner-friendly guide to deciding which business tasks AI can handle automatically and which decisions should retain human review because they affect money, customers, contracts, privacy or people.
 - [사내 데이터를 LLM에 연결할 때, 보안팀이 먼저 확인할 8가지](https://insights.voxen.io/posts/company-data-llm-security/): A practical guide to enterprise LLM security covering data minimization, access control, external processing, prompt injection, human approval and audit logs.
 - [직원들이 ChatGPT를 쓰는데, 왜 회사 일은 그대로일까?](https://insights.voxen.io/posts/chatgpt-vs-business-automation/): A beginner-friendly guide explaining the difference between individual ChatGPT use and real business automation, and why data and system connections are needed to change workflows.
