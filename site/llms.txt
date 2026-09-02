@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Articles
+- [경쟁사·검색 트렌드와 우리 매출을 같이 보면 무엇이 달라질까?](https://insights.voxen.io/posts/external-market-data-sales-decision/): How to combine competitor pricing, search trends and other external market signals with first-party sales, inventory and advertising data to support pricing, stock and marketing decisions.
 - [엑셀 파일이 여러 개라 매번 합치고 있나요? 자동화는 여기서 시작합니다](https://insights.voxen.io/posts/excel-files-automation-start/): A beginner-friendly guide to automating repeated Excel file collection, normalization, merging, validation and reporting, while using AI only where contextual judgment is useful.
 - [ERP·CRM·엑셀을 AI에 연결하려면, 데이터 파이프라인부터 설계해야 합니다](https://insights.voxen.io/posts/ai-data-pipeline-erp-crm-excel/): A practical architecture guide for collecting, normalizing, validating and serving ERP, CRM, Excel and SaaS data through controlled APIs so AI agents and dashboards use consistent business data.
 - [AI가 하면 안 되는 일도 있습니다: 사람 확인이 꼭 필요한 업무는?](https://insights.voxen.io/posts/ai-human-review-guide/): A beginner-friendly guide to deciding which business tasks AI can handle automatically and which decisions should retain human review because they affect money, customers, contracts, privacy or people.
