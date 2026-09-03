@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Articles
+- [대시보드가 있어도 아무도 안 본다면? 데이터를 행동으로 바꾸는 자동화 설계](https://insights.voxen.io/posts/dashboard-to-action-automation/): How to turn dashboards into operational systems by connecting trusted data, anomaly detection, contextual alerts, human approval and API execution.
 - [매일 사이트 들어가 숫자를 옮기고 있나요? 데이터 수집 자동화의 시작](https://insights.voxen.io/posts/web-data-collection-automation/): A beginner-friendly guide to replacing repetitive manual copying from websites, shopping platforms and admin pages with scheduled data collection, normalization, validation and alerts.
 - [경쟁사·검색 트렌드와 우리 매출을 같이 보면 무엇이 달라질까?](https://insights.voxen.io/posts/external-market-data-sales-decision/): How to combine competitor pricing, search trends and other external market signals with first-party sales, inventory and advertising data to support pricing, stock and marketing decisions.
 - [엑셀 파일이 여러 개라 매번 합치고 있나요? 자동화는 여기서 시작합니다](https://insights.voxen.io/posts/excel-files-automation-start/): A beginner-friendly guide to automating repeated Excel file collection, normalization, merging, validation and reporting, while using AI only where contextual judgment is useful.
