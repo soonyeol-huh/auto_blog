@@ -5,39 +5,26 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 ## Core business topics
 - Data collection and data engineering
 - AI automation and AI agents
-- Google, Naver, TikTok and commerce trend analysis
+- Business workflow mapping and FDE delivery
 - Business dashboards and APIs
 - Sales, marketing and operational automation
 - Custom software systems for business workflows
 
-## Articles
-- [AI 자동화, 모델보다 먼저 장애를 설계해야 합니다: 재시도·폴백·SLA 운영 가이드](https://insights.voxen.io/posts/ai-automation-reliability-sla/): A practical production guide to timeout, retry, fallback, queues, idempotency, monitoring, human escalation and internal SLA design for business AI automation.
-- [AI 도구는 샀는데, 우리 회사 일에 누가 맞춰주나요? FDE가 필요한 이유](https://insights.voxen.io/posts/fde-ai-business-bridge/): A beginner-friendly explanation of how Forward Deployed Engineers connect real business workflows, company data, AI models and production systems from problem discovery through implementation and adoption.
-- [대시보드가 있어도 아무도 안 본다면? 데이터를 행동으로 바꾸는 자동화 설계](https://insights.voxen.io/posts/dashboard-to-action-automation/): How to turn dashboards into operational systems by connecting trusted data, anomaly detection, contextual alerts, human approval and API execution.
-- [매일 사이트 들어가 숫자를 옮기고 있나요? 데이터 수집 자동화의 시작](https://insights.voxen.io/posts/web-data-collection-automation/): A beginner-friendly guide to replacing repetitive manual copying from websites, shopping platforms and admin pages with scheduled data collection, normalization, validation and alerts.
-- [경쟁사·검색 트렌드와 우리 매출을 같이 보면 무엇이 달라질까?](https://insights.voxen.io/posts/external-market-data-sales-decision/): How to combine competitor pricing, search trends and other external market signals with first-party sales, inventory and advertising data to support pricing, stock and marketing decisions.
-- [엑셀 파일이 여러 개라 매번 합치고 있나요? 자동화는 여기서 시작합니다](https://insights.voxen.io/posts/excel-files-automation-start/): A beginner-friendly guide to automating repeated Excel file collection, normalization, merging, validation and reporting, while using AI only where contextual judgment is useful.
-- [ERP·CRM·엑셀을 AI에 연결하려면, 데이터 파이프라인부터 설계해야 합니다](https://insights.voxen.io/posts/ai-data-pipeline-erp-crm-excel/): A practical architecture guide for collecting, normalizing, validating and serving ERP, CRM, Excel and SaaS data through controlled APIs so AI agents and dashboards use consistent business data.
-- [AI가 하면 안 되는 일도 있습니다: 사람 확인이 꼭 필요한 업무는?](https://insights.voxen.io/posts/ai-human-review-guide/): A beginner-friendly guide to deciding which business tasks AI can handle automatically and which decisions should retain human review because they affect money, customers, contracts, privacy or people.
-- [사내 데이터를 LLM에 연결할 때, 보안팀이 먼저 확인할 8가지](https://insights.voxen.io/posts/company-data-llm-security/): A practical guide to enterprise LLM security covering data minimization, access control, external processing, prompt injection, human approval and audit logs.
-- [직원들이 ChatGPT를 쓰는데, 왜 회사 일은 그대로일까?](https://insights.voxen.io/posts/chatgpt-vs-business-automation/): A beginner-friendly guide explaining the difference between individual ChatGPT use and real business automation, and why data and system connections are needed to change workflows.
-- [AI 외주 계약서, 구축 전에 꼭 정해야 할 7가지](https://insights.voxen.io/posts/ai-outsourcing-contract-checklist/): A practical contract checklist covering data ownership, source code handover, external API costs, account ownership, acceptance criteria and maintenance conditions for AI outsourcing projects.
-- [메일·메신저가 쌓여 중요한 일을 놓치고 있나요?](https://insights.voxen.io/posts/ai-email-message-triage/): A beginner-friendly guide to using AI to triage email and workplace messages into urgent items, tasks, replies and reference material before considering automatic responses.
-- [AI 외주 업체, 제안서에서 무엇을 봐야 할까?](https://insights.voxen.io/posts/ai-vendor-proposal-checklist/): A practical buyer checklist for comparing AI implementation proposals by workflow scope, data integration, permissions, failure handling, total cost, operations and handover conditions.
-- [회의 끝나고 정리하느라 또 30분 쓰고 있나요?](https://insights.voxen.io/posts/ai-meeting-notes-automation/): A beginner-friendly guide to automating meeting transcription, summaries, decisions, owners and action items while keeping human review and data security in the loop.
-- [AI 에이전트 구축 비용, 무엇이 견적을 바꿀까?](https://insights.voxen.io/posts/ai-agent-cost-guide/): A practical buyer's guide to the factors that drive AI agent project cost, including data integration, ERP/CRM APIs, permissions, approvals, operations and project scope.
-- [고객 문의, AI에게 어디까지 맡겨도 될까?](https://insights.voxen.io/posts/ai-customer-support-automation/): A beginner-friendly guide to deciding which customer inquiries AI can handle, when human review is needed, and why order, inventory and CRM data connections matter.
-- [AI 에이전트, 챗봇에서 멈추면 업무가 자동화되지 않습니다](https://insights.voxen.io/posts/ai-agent-erp-crm-integration/): How to connect AI agents with ERP, CRM, Excel and internal APIs using scoped permissions, human approval, logs and exception handling so AI can participate in real business workflows.
-- [매일 만드는 보고서, AI가 대신 만들 수 있을까?](https://insights.voxen.io/posts/ai-repetitive-reporting/): A beginner-friendly guide to automating repetitive reporting by separating reliable data collection and calculations from AI-generated explanations and summaries.
-- [AI 자동화, 얼마 벌어야 본전일까?](https://insights.voxen.io/posts/ai-automation-roi/): A practical guide to estimating AI automation ROI using time savings, business gains, model/API costs, operations and maintenance costs before moving from PoC to production.
-- [AI로 뭘 자동화해야 할까? 30분만 재보면 보입니다](https://insights.voxen.io/posts/ai-first-task-30-minutes/): A beginner-friendly way to identify the first automation candidate by measuring time spent on repetitive work before choosing AI tools.
-- [AI PoC는 됐는데, 왜 현업에서 멈출까?](https://insights.voxen.io/posts/ai-poc-to-production/): How to move an AI proof of concept into production by addressing data integration, access control, exception handling, logging, quality, cost and ROI.
-- [AI가 우리 회사를 모르는 이유](https://insights.voxen.io/posts/why-ai-needs-company-data/): A beginner-friendly explanation of why business AI needs access to the right company data and how sales, product, customer and internal document data can support real workflows.
-- [우리 회사에 AI, 어디부터 적용해야 할까?](https://insights.voxen.io/posts/where-to-start-ai-business/): A beginner guide to finding practical AI and automation opportunities in repetitive business work.
-- [사내 엑셀·ERP 데이터를 API로 연결하는 방법](https://insights.voxen.io/posts/excel-erp-api-integration/): How to connect Excel, ERP, CRM and commerce data through APIs and ETL pipelines.
-- [Google·Naver·TikTok 트렌드 데이터를 한 대시보드로 묶는 방법](https://insights.voxen.io/posts/market-trend-data-dashboard/): How to normalize and combine search, social trend and first-party business data into a dashboard.
-- [경쟁사 가격·상품 데이터를 자동 수집해서 매출 기회 찾는 방법](https://insights.voxen.io/posts/competitor-price-data-automation/): How to collect competitor price, stock, review and product data and connect alerts, dashboards and AI analysis.
-- [내 비즈니스에 AI를 적용하고 매출 10배 올리기](https://insights.voxen.io/posts/ai-business-10x-revenue/): A practical guide to connecting AI with customer acquisition, market research, marketing, sales and operations.
+## Latest Articles
+- [AI 자동화 상담 전에 이것부터 그려보세요: 업무 흐름 한 장 정리법](https://insights.voxen.io/posts/ai-automation-workflow-map/): A beginner-friendly method for mapping a business process into input, processing, decision, output and exception steps before choosing automation or AI.
+- [AI 자동화, 모델보다 먼저 장애를 설계해야 합니다: 재시도·폴백·SLA 운영 가이드](https://insights.voxen.io/posts/ai-automation-reliability-sla/): A practical production guide to timeout, retry, fallback, queues, idempotency, monitoring, human escalation and internal SLA design.
+- [AI 도구는 샀는데, 우리 회사 일에 누가 맞춰주나요? FDE가 필요한 이유](https://insights.voxen.io/posts/fde-ai-business-bridge/): How Forward Deployed Engineers connect real workflows, company data, AI models and production systems.
+- [대시보드가 있어도 아무도 안 본다면? 데이터를 행동으로 바꾸는 자동화 설계](https://insights.voxen.io/posts/dashboard-to-action-automation/): Turning dashboards into operational systems with anomaly detection, contextual alerts, human approval and API execution.
+- [매일 사이트 들어가 숫자를 옮기고 있나요? 데이터 수집 자동화의 시작](https://insights.voxen.io/posts/web-data-collection-automation/): Replacing repetitive manual copying with scheduled data collection, normalization, validation and alerts.
+- [경쟁사·검색 트렌드와 우리 매출을 같이 보면 무엇이 달라질까?](https://insights.voxen.io/posts/external-market-data-sales-decision/): Combining external market signals with first-party sales, inventory and advertising data.
+- [엑셀 파일이 여러 개라 매번 합치고 있나요? 자동화는 여기서 시작합니다](https://insights.voxen.io/posts/excel-files-automation-start/): Automating repeated Excel collection, normalization, merging, validation and reporting.
+- [ERP·CRM·엑셀을 AI에 연결하려면, 데이터 파이프라인부터 설계해야 합니다](https://insights.voxen.io/posts/ai-data-pipeline-erp-crm-excel/): Architecture for serving ERP, CRM, Excel and SaaS data to AI through controlled pipelines and APIs.
+- [AI가 하면 안 되는 일도 있습니다: 사람 확인이 꼭 필요한 업무는?](https://insights.voxen.io/posts/ai-human-review-guide/): Deciding which tasks AI can handle and which decisions should retain human review.
+- [사내 데이터를 LLM에 연결할 때, 보안팀이 먼저 확인할 8가지](https://insights.voxen.io/posts/company-data-llm-security/): Enterprise LLM security covering data minimization, access control, approval and audit logs.
+
+## Article Archive
+Older articles remain discoverable through https://insights.voxen.io/sitemap.xml and https://insights.voxen.io/feed.xml.
 
 ## Company
 Voxen: https://voxen.io
+Voxen Cloud: https://cloud.voxen.io
