@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Latest Articles
+- [문의폼만 받아두고 있나요? 홈페이지 문의를 CRM·알림·후속 연락까지 자동화하는 방법](https://insights.voxen.io/posts/lead-form-crm-automation/): How to turn website inquiries into a measurable sales workflow with centralized storage, routing, notifications, follow-up reminders and optional AI classification.
 - [API가 없는 사내 시스템도 자동화할 수 있을까? 연결 방법 4가지](https://insights.voxen.io/posts/legacy-system-automation-without-api/): Practical ways to connect legacy ERP, groupware and admin systems without official APIs using files, read-only database access, browser automation and middleware APIs.
 - [AI 자동화 상담 전에 이것부터 그려보세요: 업무 흐름 한 장 정리법](https://insights.voxen.io/posts/ai-automation-workflow-map/): A beginner-friendly method for mapping a business process into input, processing, decision, output and exception steps before choosing automation or AI.
 - [AI 자동화, 모델보다 먼저 장애를 설계해야 합니다: 재시도·폴백·SLA 운영 가이드](https://insights.voxen.io/posts/ai-automation-reliability-sla/): A practical production guide to timeout, retry, fallback, queues, idempotency, monitoring, human escalation and internal SLA design.
@@ -20,7 +21,6 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - [경쟁사·검색 트렌드와 우리 매출을 같이 보면 무엇이 달라질까?](https://insights.voxen.io/posts/external-market-data-sales-decision/): Combining external market signals with first-party sales, inventory and advertising data.
 - [엑셀 파일이 여러 개라 매번 합치고 있나요? 자동화는 여기서 시작합니다](https://insights.voxen.io/posts/excel-files-automation-start/): Automating repeated Excel collection, normalization, merging, validation and reporting.
 - [ERP·CRM·엑셀을 AI에 연결하려면, 데이터 파이프라인부터 설계해야 합니다](https://insights.voxen.io/posts/ai-data-pipeline-erp-crm-excel/): Architecture for serving ERP, CRM, Excel and SaaS data to AI through controlled pipelines and APIs.
-- [AI가 하면 안 되는 일도 있습니다: 사람 확인이 꼭 필요한 업무는?](https://insights.voxen.io/posts/ai-human-review-guide/): Deciding which tasks AI can handle and which decisions should retain human review.
 
 ## Article Archive
 Older articles remain discoverable through https://insights.voxen.io/sitemap.xml and https://insights.voxen.io/feed.xml.
