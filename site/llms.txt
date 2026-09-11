@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Latest Articles
+- [AI 자동화 견적이 업체마다 다른 이유: 비용을 결정하는 5가지 요소](https://insights.voxen.io/posts/ai-automation-cost-estimate-factors/): A practical guide to how integrations, data quality, AI scope, exception handling and production operations determine automation project cost.
 - [자동화한다고 무조건 AI가 필요한 건 아닙니다: 규칙 자동화와 AI를 나누는 기준](https://insights.voxen.io/posts/automation-vs-ai-where-to-use-ai/): A practical guide to using deterministic automation for fixed rules and AI only where language, context or ambiguous judgment is required.
 - [문의폼만 받아두고 있나요? 홈페이지 문의를 CRM·알림·후속 연락까지 자동화하는 방법](https://insights.voxen.io/posts/lead-form-crm-automation/): How to turn website inquiries into a measurable sales workflow with centralized storage, routing, notifications, follow-up reminders and optional AI classification.
 - [API가 없는 사내 시스템도 자동화할 수 있을까? 연결 방법 4가지](https://insights.voxen.io/posts/legacy-system-automation-without-api/): Practical ways to connect legacy ERP, groupware and admin systems without official APIs using files, read-only database access, browser automation and middleware APIs.
@@ -20,7 +21,6 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - [대시보드가 있어도 아무도 안 본다면? 데이터를 행동으로 바꾸는 자동화 설계](https://insights.voxen.io/posts/dashboard-to-action-automation/): Turning dashboards into operational systems with anomaly detection, contextual alerts, human approval and API execution.
 - [매일 사이트 들어가 숫자를 옮기고 있나요? 데이터 수집 자동화의 시작](https://insights.voxen.io/posts/web-data-collection-automation/): Replacing repetitive manual copying with scheduled data collection, normalization, validation and alerts.
 - [경쟁사·검색 트렌드와 우리 매출을 같이 보면 무엇이 달라질까?](https://insights.voxen.io/posts/external-market-data-sales-decision/): Combining external market signals with first-party sales, inventory and advertising data.
-- [엑셀 파일이 여러 개라 매번 합치고 있나요? 자동화는 여기서 시작합니다](https://insights.voxen.io/posts/excel-files-automation-start/): Automating repeated Excel collection, normalization, merging, validation and reporting.
 
 ## Article Archive
 Older articles remain discoverable through https://insights.voxen.io/sitemap.xml and https://insights.voxen.io/feed.xml.
