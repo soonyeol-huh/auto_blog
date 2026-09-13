@@ -67,7 +67,7 @@ git pull --ff-only origin main
 <h2>Voxen은 이렇게 접근합니다</h2><p>Voxen은 AI를 억지로 모든 단계에 넣기보다 현재 업무와 데이터를 먼저 살펴보고 가장 단순하고 안정적인 자동화 구조를 찾습니다. 데이터 수집·엔지니어링, AI 판단, API·대시보드, 맞춤 시스템 구축을 실제 비즈니스 프로세스에 맞게 연결합니다.</p>
 <h2>이 글도 읽어보세요</h2><ul><li><a href="/posts/{{관련글1-slug}}/"><strong>{{관련글1 제목}}</strong></a> — {{한줄설명}}</li><li><a href="/posts/{{관련글2-slug}}/"><strong>{{관련글2 제목}}</strong></a> — {{한줄설명}}</li></ul>
 <div class="cta"><strong>데이터와 AI를 실제 업무 시스템으로 연결하고 싶다면</strong><p>Voxen Cloud에서 데이터 수집·자동화·맞춤 시스템 구축 방향을 살펴보세요.</p><a href="https://cloud.voxen.io">cloud.voxen.io →</a></div>
-<div class="contact-cta"><p>{{상담 유도 문구}}</p><a class="contact-button" href="mailto:hello@voxen.io">이메일로 상담하기</a></div>
+<div class="contact-cta"><p>{{상담 유도 문구}}</p><div class="contact-actions"><a class="contact-button kakao" href="https://open.kakao.com/o/s1rScRMi" target="_blank" rel="noopener noreferrer">카카오톡 상담하기</a><a class="contact-button" href="mailto:hello@voxen.io">이메일로 상담하기</a></div></div>
 </main><footer><div class="wrap">© 2026 Voxen</div></footer></body></html>
 ```
 
