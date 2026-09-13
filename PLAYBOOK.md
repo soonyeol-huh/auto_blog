@@ -48,19 +48,19 @@ git pull --ff-only origin main
 <meta property="og:title" content="{{제목}}">
 <meta property="og:description" content="{{OG 설명}}">
 <meta property="og:url" content="https://insights.voxen.io/posts/{{slug}}/">
-<meta property="og:image" content="https://insights.voxen.io/assets/{{slug}}-og.png">
+<meta property="og:image" content="{{Unsplash 이미지 URL}}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="{{일러스트 대체텍스트}}">
+<meta property="og:image:alt" content="{{사진 설명}}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://insights.voxen.io/assets/{{slug}}-og.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"{{제목}}","description":"{{설명}}","datePublished":"{{YYYY-MM-DD}}T12:00:00+09:00","inLanguage":"ko-KR","image":"https://insights.voxen.io/assets/{{slug}}-og.png","author":{"@type":"Organization","name":"Voxen"},"publisher":{"@type":"Organization","name":"Voxen","url":"https://voxen.io"},"mainEntityOfPage":"https://insights.voxen.io/posts/{{slug}}/"}</script>
+<meta name="twitter:image" content="{{Unsplash 이미지 URL}}">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"{{제목}}","description":"{{설명}}","datePublished":"{{YYYY-MM-DD}}T12:00:00+09:00","inLanguage":"ko-KR","image":"{{Unsplash 이미지 URL}}","author":{"@type":"Organization","name":"Voxen"},"publisher":{"@type":"Organization","name":"Voxen","url":"https://voxen.io"},"mainEntityOfPage":"https://insights.voxen.io/posts/{{slug}}/"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"{{질문1}}","acceptedAnswer":{"@type":"Answer","text":"{{답1}}"}},{"@type":"Question","name":"{{질문2}}","acceptedAnswer":{"@type":"Answer","text":"{{답2}}"}}]}</script>
 </head><body><header><div class="wrap nav"><a class="brand" href="/">VOXEN <span>INSIGHTS</span></a></div></header>
 <main class="wrap article">
 <p class="eyebrow">{{EYEBROW}} · {{YYYY.MM.DD}}</p>
 <h1>{{제목(간결한 버전)}}</h1>
 <p class="lead">{{도입부, strong 태그로 핵심 문장 강조}}</p>
-<figure class="visual"><img src="/assets/{{slug}}-og.svg" alt="{{일러스트 대체텍스트}}" loading="eager" style="width:100%;height:auto;border-radius:20px;display:block"><figcaption>{{캡션}}</figcaption></figure>
+<figure class="visual"><img src="{{Unsplash 이미지 URL}}" alt="{{사진 설명}}" loading="eager" style="width:100%;height:auto;border-radius:20px;display:block"><figcaption>{{캡션}}</figcaption></figure>
 <h2>...</h2><p>...</p>
 <!-- h2 섹션 5~7개, 필요시 <table>, <div class="callout">, <ol>/<ul> 사용 -->
 <h2>FAQ</h2><h3>{{질문1}}</h3><p>{{답1}}</p><h3>{{질문2}}</h3><p>{{답2}}</p>
@@ -73,14 +73,18 @@ git pull --ff-only origin main
 
 관련 글 링크는 실제 존재하는 슬러그로 2~3개 연결한다(`ls site/posts` 확인).
 
-## 4. OG 일러스트 — `site/assets/{{slug}}-og.svg`
+## 4. 대표 이미지 — 직접 그리지 말고 Unsplash에서 찾는다
 
-기존 하우스 스타일을 그대로 따른다(예: `site/assets/automation-vs-ai-where-to-use-ai-og.svg` 참고):
+**손으로 SVG 일러스트를 그리지 않는다.** 대신 Unsplash에서 주제에 가장 잘 맞는 실사 사진을 찾아 그대로 hotlink한다.
 
-- `viewBox="0 0 1200 630"`, 배경 `<rect>` fill `#f8fafc`
-- 선화(line art): stroke `#334155`, stroke-width `8`, round cap/join, 흰색(`#fff`) 채움 도형(둥근 사각형·원)으로 프로세스/흐름 표현
-- 포인트 색상 `#c7d2fe`로 작은 원(강조점) 2~3개
-- 주제에 맞게 박스 2~4개를 화살표/선으로 연결하는 미니멀 플로우 다이어그램으로 구성. 텍스트는 넣지 않는다.
+1. `WebFetch`로 `https://unsplash.com/s/photos/<영문 검색어>` 페이지를 읽어 `images.unsplash.com/photo-<id>` 형태의 실제 CDN 이미지 URL과 설명을 추출한다. 검색어는 영어로, 글의 핵심 소재를 구체적으로 표현한다(예: "restaurant reservation sign", "customer support phone call").
+2. 후보 중 글의 주제와 실제로 어울리고 상업적으로 무난한(사람 얼굴이 과하게 클로즈업되지 않은, 특정 브랜드 로고가 두드러지지 않는) 사진을 고른다.
+3. 고른 URL을 다음 형식으로 다듬는다: `https://images.unsplash.com/photo-<id>?auto=format&fit=crop&w=1200&h=630&q=80`
+4. 실제로 로드되는지 `curl -sI`로 200을 확인하고, 가능하면 이미지를 받아 눈으로도 확인한다(Read 도구로 이미지 파일을 열면 미리보기 가능).
+5. 이 URL을 그대로 `og:image`, `twitter:image`, JSON-LD `image`, 본문 `<figure class="visual"><img src=...>`에 사용한다. **`site/assets/`에 별도 파일을 만들 필요 없음** — 로컬 파일이 아니라 Unsplash CDN을 직접 참조한다.
+6. `alt` 텍스트는 사진 내용을 있는 그대로 짧게 설명한다(과장하지 않음).
+
+기존에 하드코딩된 로컬 SVG 참조(`/assets/{{slug}}-og.svg`)가 있다면 전부 Unsplash URL로 바꾸고, CI(`pages.yml`)가 더 이상 존재하지 않는 svg를 png로 렌더링하려 시도하지 않도록 로컬 og 파일은 만들지 않는다.
 
 ## 5. 홈페이지 — `site/index.html`
 
