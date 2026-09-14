@@ -11,12 +11,15 @@
 import argparse
 import os
 import sys
+import time
 import urllib.request
 import urllib.parse
 import urllib.error
 
 ENV_PATH = os.path.expanduser("~/.config/voxen/facebook.env")
 GRAPH_VERSION = "v21.0"
+DEPLOY_TIMEOUT = 300  # GitHub Pages 배포 대기 최대 5분
+POLL_INTERVAL = 10
 
 
 def load_env(path: str) -> dict:
@@ -31,6 +34,38 @@ def load_env(path: str) -> dict:
             key, value = line.split("=", 1)
             env[key.strip()] = value.strip().strip('"').strip("'")
     return env
+
+
+def wait_until_live(url: str, timeout: int = DEPLOY_TIMEOUT) -> bool:
+    """글이 실제로 배포될 때까지 기다린다.
+
+    push 직후 바로 포스팅하면 GitHub Pages 배포(보통 1~3분)가 끝나기 전이라
+    Facebook 크롤러가 404를 받고 **그 404를 캐시**한다. 페이지가 나중에 살아나도
+    미리보기는 "Page not found"로 굳는다. 2026-09-14에 실제로 겪은 문제다.
+    """
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        try:
+            req = urllib.request.Request(url, method="HEAD")
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                if resp.status == 200:
+                    return True
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError):
+            pass
+        time.sleep(POLL_INTERVAL)
+    return False
+
+
+def refresh_og_cache(url: str, token: str) -> None:
+    """Facebook이 링크를 새로 읽게 한다(공유 디버거의 API 판). 실패해도 발송은 계속."""
+    payload = urllib.parse.urlencode({"id": url, "scrape": "true", "access_token": token}).encode()
+    try:
+        with urllib.request.urlopen(
+            urllib.request.Request(f"https://graph.facebook.com/{GRAPH_VERSION}/", data=payload), timeout=30
+        ):
+            pass
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as e:
+        print(f"[post_to_facebook] WARN: OG 캐시 갱신 실패({e}) — 그대로 진행합니다.", file=sys.stderr)
 
 
 def main() -> int:
@@ -51,6 +86,17 @@ def main() -> int:
             file=sys.stderr,
         )
         return 2  # 발행 자체는 성공이므로 run-daily.sh는 이 코드를 치명적 실패로 취급하지 않는다
+
+    if not wait_until_live(args.link):
+        print(
+            f"[post_to_facebook] SKIP: {args.link} 가 {DEPLOY_TIMEOUT}초 안에 배포되지 않았습니다. "
+            "지금 올리면 Facebook이 404를 캐시하므로 포스팅하지 않습니다(글 발행은 유지).",
+            file=sys.stderr,
+        )
+        return 2
+
+    # 배포 확인 후 한 번 읽히게 해서, 포스팅 시점에 Facebook이 올바른 OG를 갖고 있게 한다
+    refresh_og_cache(args.link, token)
 
     url = f"https://graph.facebook.com/{GRAPH_VERSION}/{page_id}/feed"
     payload = urllib.parse.urlencode(

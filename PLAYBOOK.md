@@ -156,6 +156,18 @@ python3 scripts/post_to_facebook.py \
 `~/.config/voxen/facebook.env`에 `FB_PAGE_ID`/`FB_PAGE_ACCESS_TOKEN`이 없으면 스크립트가 에러 메시지를 내고 종료한다 —
 이 경우 **글 발행은 그대로 유지**하고 Facebook 포스팅만 건너뛴 뒤 로그에 사유를 남긴다(재시도하지 않음, 다음날 처리).
 
+**배포 대기는 스크립트가 알아서 한다.** `git push` 직후 바로 실행해도 된다 — `post_to_facebook.py`가
+링크가 200을 낼 때까지 최대 5분 기다린 뒤(10초 간격) 포스팅한다. 이 가드가 없으면 GitHub Pages 배포가
+끝나기 전에 Facebook 크롤러가 404를 받고 **그 404를 캐시**해서, 페이지가 살아난 뒤에도 미리보기가
+"Page not found"로 굳는다(2026-09-14 실제 발생). 5분 안에 배포가 안 되면 포스팅을 건너뛰고 종료한다 —
+깨진 미리보기로 올라가는 것보다 안 올라가는 게 낫다.
+
+이미 잘못된 미리보기가 박힌 글이 있으면 아래로 Facebook에 다시 읽힌다:
+
+```
+curl -s -X POST "https://graph.facebook.com/v21.0/?id=<URL 인코딩된 글 주소>&scrape=true&access_token=$FB_PAGE_ACCESS_TOKEN"
+```
+
 ## 11. 로그
 
 `logs/YYYY-MM-DD.log`에 다음을 한 줄씩 기록:
