@@ -11,9 +11,23 @@ cd /Users/pass4u/VOXEN/auto_blog
 git pull --ff-only origin main
 ```
 
-## 1. 주제 선정
+## 1. 주제 선정 — 시트 큐가 우선이다
 
-- `site/llms.txt`와 `ls site/posts`로 기존 32개+ 주제/슬러그를 확인하고 **겹치지 않는** 새 주제를 고른다.
+먼저 구글 시트('복센블로그 주제')에 사장님이 정해 둔 대기 주제가 있는지 본다:
+
+```
+python3 scripts/topic_queue.py next
+```
+
+- **exit 0** — `{"row":N,"주제":"...","카테고리":"...","대상":"...","슬러그":"..."}` 가 나온다.
+  **이 주제를 그대로 쓴다.** 시트의 슬러그가 있으면 그 슬러그를 쓰고, 비어 있으면 새로 만든다.
+  `대상` 이 `소상공인` 이면 독자가 기업 담당자가 아니라 가게 사장님이다 — 아래 "글쓰기 규칙"의
+  독자 설정을 그쪽으로 바꿔 쓴다(ERP·파이프라인 같은 용어 대신 실제 가게 상황의 언어로).
+- **exit 2** — 설정이 없거나 큐가 비었다는 뜻이다. 이때만 아래 기준으로 **직접 고른다.**
+
+### 큐가 비었을 때 직접 고르는 기준
+
+- `site/llms.txt`와 `ls site/posts`로 기존 주제/슬러그를 확인하고 **겹치지 않는** 새 주제를 고른다.
 - 반드시 아래 4개 카테고리 중 하나에 속해야 한다(기존 eyebrow 표기 참고, 조합 가능):
   - AI 자동화 — 예: `AI EASY GUIDE`, `AI OPERATIONS · RELIABILITY`, `AI · BUSINESS AUTOMATION`
   - 비즈니스 자동화 — 예: `BUSINESS AUTOMATION`, `LEAD AUTOMATION`
@@ -168,13 +182,26 @@ python3 scripts/post_to_facebook.py \
 curl -s -X POST "https://graph.facebook.com/v21.0/?id=<URL 인코딩된 글 주소>&scrape=true&access_token=$FB_PAGE_ACCESS_TOKEN"
 ```
 
-## 11. 로그
+## 11. 시트에 발행 기록
+
+1단계에서 시트 큐로 주제를 받았다면, 그 행을 발행됨으로 바꾼다:
+
+```
+python3 scripts/topic_queue.py mark --slug <slug>
+```
+
+`발행여부`를 `발행됨`으로, `발행일`을 오늘로, `URL`을 글 주소로 채운다. 실패하거나 설정이 없으면
+exit 2 로 넘어가니 **발행 자체를 되돌리지 말고** 로그에만 남긴다. 직접 고른 주제였다면 이 단계는 건너뛴다
+(시트에 없는 행이라 `WARN` 만 난다).
+
+## 12. 로그
 
 `logs/YYYY-MM-DD.log`에 다음을 한 줄씩 기록:
-- 선정한 주제/슬러그
+- 선정한 주제/슬러그 (**시트 큐에서 왔는지, 직접 골랐는지 명시**)
 - 발행 URL
 - git push 결과(커밋 해시)
 - Facebook 포스팅 결과(성공/실패 사유)
+- 시트 기록 결과(성공/스킵 사유)
 
 ## 실패 시 처리
 
