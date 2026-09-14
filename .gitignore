@@ -11,3 +11,6 @@ logs/*
 !logs/.gitkeep
 data/*
 !data/.gitkeep
+
+# 유튜브 쇼츠 시험 산출물(로컬 전용)
+youtube_shorts/
