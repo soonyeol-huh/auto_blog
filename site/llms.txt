@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Latest Articles
+- [네이버·배달앱 리뷰, 매일 일일이 확인하고 계신가요? 자동 모니터링 가이드](https://insights.voxen.io/posts/review-rating-monitoring-automation/): A practical guide to automatically collecting store reviews across platforms like Naver, Google and delivery apps, prioritizing negative reviews and alerting staff.
 - [업계 뉴스·공시, 매일 검색하고 계신가요? 자동 모니터링 가이드](https://insights.voxen.io/posts/news-monitoring-automation/): A practical guide to automating industry news and public disclosure monitoring with keyword collection, AI relevance judgment and prioritized alerts.
 - [전화·이메일 예약 확인, 이제는 AI로 자동화하세요](https://insights.voxen.io/posts/reservation-booking-automation/): A practical guide to using AI to parse phone and email booking requests and automatically connect them to calendar checks and customer confirmations.
 - [여러 시스템 숫자가 다르게 나온다면? 데이터 정합성 자동 점검 가이드](https://insights.voxen.io/posts/data-consistency-check-automation/): A practical guide to detecting mismatched numbers across ERP, CRM and spreadsheets by defining baselines, comparison rules and automated alerts.
@@ -20,8 +21,6 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - [API가 없는 사내 시스템도 자동화할 수 있을까? 연결 방법 4가지](https://insights.voxen.io/posts/legacy-system-automation-without-api/): Practical ways to connect legacy ERP, groupware and admin systems without official APIs using files, read-only database access, browser automation and middleware APIs.
 - [AI 자동화 상담 전에 이것부터 그려보세요: 업무 흐름 한 장 정리법](https://insights.voxen.io/posts/ai-automation-workflow-map/): A beginner-friendly method for mapping a business process into input, processing, decision, output and exception steps before choosing automation or AI.
 - [AI 자동화, 모델보다 먼저 장애를 설계해야 합니다: 재시도·폴백·SLA 운영 가이드](https://insights.voxen.io/posts/ai-automation-reliability-sla/): A practical production guide to timeout, retry, fallback, queues, idempotency, monitoring, human escalation and internal SLA design.
-- [AI 도구는 샀는데, 우리 회사 일에 누가 맞춰주나요? FDE가 필요한 이유](https://insights.voxen.io/posts/fde-ai-business-bridge/): How Forward Deployed Engineers connect real workflows, company data, AI models and production systems.
-
 ## Article Archive
 Older articles remain discoverable through https://insights.voxen.io/sitemap.xml and https://insights.voxen.io/feed.xml.
 
