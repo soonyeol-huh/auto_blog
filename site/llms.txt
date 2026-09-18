@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Latest Articles
+- [거래처가 왜 세 번씩 등록돼 있을까요? 중복 데이터 자동 정리 가이드](https://insights.voxen.io/posts/duplicate-data-cleanup-automation/): A practical guide to automatically detecting duplicate customer and vendor records that differ only in formatting, and safely merging them with human review.
 - [인스타그램 댓글·카톡 문의, 응대가 밀리시나요? AI 자동 응대 만들기](https://insights.voxen.io/posts/sns-comment-dm-auto-reply/): A practical guide to automating replies to repetitive Instagram comment and KakaoTalk channel inquiries with AI while routing judgment calls to a human.
 - [재고 부족을 뒤늦게 알아차리시나요? 재고·발주 자동 알림 만들기](https://insights.voxen.io/posts/inventory-reorder-automation/): A practical guide to automatically tracking inventory levels and sales velocity to trigger reorder alerts before stockouts or overstock happen.
 - [네이버·배달앱 리뷰, 매일 일일이 확인하고 계신가요? 자동 모니터링 가이드](https://insights.voxen.io/posts/review-rating-monitoring-automation/): A practical guide to automatically collecting store reviews across platforms like Naver, Google and delivery apps, prioritizing negative reviews and alerting staff.
@@ -20,7 +21,6 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - [AI 자동화 견적이 업체마다 다른 이유: 비용을 결정하는 5가지 요소](https://insights.voxen.io/posts/ai-automation-cost-estimate-factors/): A practical guide to how integrations, data quality, AI scope, exception handling and production operations determine automation project cost.
 - [자동화한다고 무조건 AI가 필요한 건 아닙니다: 규칙 자동화와 AI를 나누는 기준](https://insights.voxen.io/posts/automation-vs-ai-where-to-use-ai/): A practical guide to using deterministic automation for fixed rules and AI only where language, context or ambiguous judgment is required.
 - [문의폼만 받아두고 있나요? 홈페이지 문의를 CRM·알림·후속 연락까지 자동화하는 방법](https://insights.voxen.io/posts/lead-form-crm-automation/): How to turn website inquiries into a measurable sales workflow with centralized storage, routing, notifications, follow-up reminders and optional AI classification.
-- [API가 없는 사내 시스템도 자동화할 수 있을까? 연결 방법 4가지](https://insights.voxen.io/posts/legacy-system-automation-without-api/): Practical ways to connect legacy ERP, groupware and admin systems without official APIs using files, read-only database access, browser automation and middleware APIs.
 ## Article Archive
 Older articles remain discoverable through https://insights.voxen.io/sitemap.xml and https://insights.voxen.io/feed.xml.
 
