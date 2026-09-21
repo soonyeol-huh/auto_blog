@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Latest Articles
+- [환율·원자재 가격, 매일 직접 확인하고 계신가요? 구매 원가 변동 자동 모니터링 가이드](https://insights.voxen.io/posts/exchange-rate-material-price-monitoring/): A practical guide to automatically collecting exchange rates and commodity prices from public sources, translating them into cost impact on your own purchase items, and alerting only when thresholds are crossed.
 - [이력서 100장, 담당자가 다 읽어야 할까요? AI 서류 스크리닝 자동화 가이드](https://insights.voxen.io/posts/resume-screening-automation/): A practical guide to automating resume information extraction and requirement matching with AI while keeping final hiring decisions with a human reviewer.
 - [계약 갱신일을 놓쳐서 손해 본 적 있으신가요? 계약·구독 만료 자동 알림 만들기](https://insights.voxen.io/posts/contract-renewal-alert-automation/): A practical guide to automatically tracking contract and subscription expiration dates and sending advance renewal alerts before auto-renewal or service lapse.
 - [거래처가 왜 세 번씩 등록돼 있을까요? 중복 데이터 자동 정리 가이드](https://insights.voxen.io/posts/duplicate-data-cleanup-automation/): A practical guide to automatically detecting duplicate customer and vendor records that differ only in formatting, and safely merging them with human review.
@@ -20,7 +21,6 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - [업계 뉴스·공시, 매일 검색하고 계신가요? 자동 모니터링 가이드](https://insights.voxen.io/posts/news-monitoring-automation/): A practical guide to automating industry news and public disclosure monitoring with keyword collection, AI relevance judgment and prioritized alerts.
 - [전화·이메일 예약 확인, 이제는 AI로 자동화하세요](https://insights.voxen.io/posts/reservation-booking-automation/): A practical guide to using AI to parse phone and email booking requests and automatically connect them to calendar checks and customer confirmations.
 - [여러 시스템 숫자가 다르게 나온다면? 데이터 정합성 자동 점검 가이드](https://insights.voxen.io/posts/data-consistency-check-automation/): A practical guide to detecting mismatched numbers across ERP, CRM and spreadsheets by defining baselines, comparison rules and automated alerts.
-- [AI 자동화 견적이 업체마다 다른 이유: 비용을 결정하는 5가지 요소](https://insights.voxen.io/posts/ai-automation-cost-estimate-factors/): A practical guide to how integrations, data quality, AI scope, exception handling and production operations determine automation project cost.
 ## Article Archive
 Older articles remain discoverable through https://insights.voxen.io/sitemap.xml and https://insights.voxen.io/feed.xml.
 
