@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Latest Articles
+- [청구서 보내고 입금 확인, 아직 매달 손으로 하고 계신가요? 청구·입금 대사 자동화 가이드](https://insights.voxen.io/posts/invoice-payment-reconciliation-automation/): A practical guide to automating recurring invoice sending, bank deposit collection, invoice-to-payment matching rules and staged overdue alerts so staff only handle exceptions.
 - [환율·원자재 가격, 매일 직접 확인하고 계신가요? 구매 원가 변동 자동 모니터링 가이드](https://insights.voxen.io/posts/exchange-rate-material-price-monitoring/): A practical guide to automatically collecting exchange rates and commodity prices from public sources, translating them into cost impact on your own purchase items, and alerting only when thresholds are crossed.
 - [이력서 100장, 담당자가 다 읽어야 할까요? AI 서류 스크리닝 자동화 가이드](https://insights.voxen.io/posts/resume-screening-automation/): A practical guide to automating resume information extraction and requirement matching with AI while keeping final hiring decisions with a human reviewer.
 - [계약 갱신일을 놓쳐서 손해 본 적 있으신가요? 계약·구독 만료 자동 알림 만들기](https://insights.voxen.io/posts/contract-renewal-alert-automation/): A practical guide to automatically tracking contract and subscription expiration dates and sending advance renewal alerts before auto-renewal or service lapse.
@@ -20,7 +21,6 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - [네이버·배달앱 리뷰, 매일 일일이 확인하고 계신가요? 자동 모니터링 가이드](https://insights.voxen.io/posts/review-rating-monitoring-automation/): A practical guide to automatically collecting store reviews across platforms like Naver, Google and delivery apps, prioritizing negative reviews and alerting staff.
 - [업계 뉴스·공시, 매일 검색하고 계신가요? 자동 모니터링 가이드](https://insights.voxen.io/posts/news-monitoring-automation/): A practical guide to automating industry news and public disclosure monitoring with keyword collection, AI relevance judgment and prioritized alerts.
 - [전화·이메일 예약 확인, 이제는 AI로 자동화하세요](https://insights.voxen.io/posts/reservation-booking-automation/): A practical guide to using AI to parse phone and email booking requests and automatically connect them to calendar checks and customer confirmations.
-- [여러 시스템 숫자가 다르게 나온다면? 데이터 정합성 자동 점검 가이드](https://insights.voxen.io/posts/data-consistency-check-automation/): A practical guide to detecting mismatched numbers across ERP, CRM and spreadsheets by defining baselines, comparison rules and automated alerts.
 ## Article Archive
 Older articles remain discoverable through https://insights.voxen.io/sitemap.xml and https://insights.voxen.io/feed.xml.
 
