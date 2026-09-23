@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Latest Articles
+- [거래처 주문서·발주서, 아직 손으로 입력하고 계신가요? AI 문서 데이터 자동 입력 가이드](https://insights.voxen.io/posts/order-document-data-entry-automation/): A practical guide to automating order and purchase-order data entry with AI document extraction, item code matching, a confidence-based human review queue and ERP registration.
 - [청구서 보내고 입금 확인, 아직 매달 손으로 하고 계신가요? 청구·입금 대사 자동화 가이드](https://insights.voxen.io/posts/invoice-payment-reconciliation-automation/): A practical guide to automating recurring invoice sending, bank deposit collection, invoice-to-payment matching rules and staged overdue alerts so staff only handle exceptions.
 - [환율·원자재 가격, 매일 직접 확인하고 계신가요? 구매 원가 변동 자동 모니터링 가이드](https://insights.voxen.io/posts/exchange-rate-material-price-monitoring/): A practical guide to automatically collecting exchange rates and commodity prices from public sources, translating them into cost impact on your own purchase items, and alerting only when thresholds are crossed.
 - [이력서 100장, 담당자가 다 읽어야 할까요? AI 서류 스크리닝 자동화 가이드](https://insights.voxen.io/posts/resume-screening-automation/): A practical guide to automating resume information extraction and requirement matching with AI while keeping final hiring decisions with a human reviewer.
@@ -20,7 +21,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - [재고 부족을 뒤늦게 알아차리시나요? 재고·발주 자동 알림 만들기](https://insights.voxen.io/posts/inventory-reorder-automation/): A practical guide to automatically tracking inventory levels and sales velocity to trigger reorder alerts before stockouts or overstock happen.
 - [네이버·배달앱 리뷰, 매일 일일이 확인하고 계신가요? 자동 모니터링 가이드](https://insights.voxen.io/posts/review-rating-monitoring-automation/): A practical guide to automatically collecting store reviews across platforms like Naver, Google and delivery apps, prioritizing negative reviews and alerting staff.
 - [업계 뉴스·공시, 매일 검색하고 계신가요? 자동 모니터링 가이드](https://insights.voxen.io/posts/news-monitoring-automation/): A practical guide to automating industry news and public disclosure monitoring with keyword collection, AI relevance judgment and prioritized alerts.
-- [전화·이메일 예약 확인, 이제는 AI로 자동화하세요](https://insights.voxen.io/posts/reservation-booking-automation/): A practical guide to using AI to parse phone and email booking requests and automatically connect them to calendar checks and customer confirmations.
+
 ## Article Archive
 Older articles remain discoverable through https://insights.voxen.io/sitemap.xml and https://insights.voxen.io/feed.xml.
 
