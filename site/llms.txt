@@ -11,6 +11,7 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - Custom software systems for business workflows
 
 ## Latest Articles
+- [견적 요청 올 때마다 엑셀 열어 계산하고 계신가요? 견적서 자동 작성 자동화 가이드](https://insights.voxen.io/posts/quote-generation-automation/): A practical guide to automating quote generation: structuring inbound quote requests with AI, calculating prices from rule-based price lists and discount policies, routing only non-standard quotes to human review, and tracking follow-ups and win/loss after sending.
 - [스마트스토어·쿠팡·매장 매출, 매일 따로 내려받아 합치고 계신가요? 판매 채널 매출 데이터 자동 통합 가이드](https://insights.voxen.io/posts/multi-channel-sales-data-consolidation/): A practical guide to automatically collecting sales data from online marketplaces, your own store and offline POS, standardizing fields, handling cancellations and fees consistently, and producing one daily consolidated sales view.
 - [거래처 주문서·발주서, 아직 손으로 입력하고 계신가요? AI 문서 데이터 자동 입력 가이드](https://insights.voxen.io/posts/order-document-data-entry-automation/): A practical guide to automating order and purchase-order data entry with AI document extraction, item code matching, a confidence-based human review queue and ERP registration.
 - [청구서 보내고 입금 확인, 아직 매달 손으로 하고 계신가요? 청구·입금 대사 자동화 가이드](https://insights.voxen.io/posts/invoice-payment-reconciliation-automation/): A practical guide to automating recurring invoice sending, bank deposit collection, invoice-to-payment matching rules and staged overdue alerts so staff only handle exceptions.
@@ -20,7 +21,6 @@ Voxen Insights publishes practical Korean-language articles about applying data 
 - [거래처가 왜 세 번씩 등록돼 있을까요? 중복 데이터 자동 정리 가이드](https://insights.voxen.io/posts/duplicate-data-cleanup-automation/): A practical guide to automatically detecting duplicate customer and vendor records that differ only in formatting, and safely merging them with human review.
 - [인스타그램 댓글·카톡 문의, 응대가 밀리시나요? AI 자동 응대 만들기](https://insights.voxen.io/posts/sns-comment-dm-auto-reply/): A practical guide to automating replies to repetitive Instagram comment and KakaoTalk channel inquiries with AI while routing judgment calls to a human.
 - [재고 부족을 뒤늦게 알아차리시나요? 재고·발주 자동 알림 만들기](https://insights.voxen.io/posts/inventory-reorder-automation/): A practical guide to automatically tracking inventory levels and sales velocity to trigger reorder alerts before stockouts or overstock happen.
-- [네이버·배달앱 리뷰, 매일 일일이 확인하고 계신가요? 자동 모니터링 가이드](https://insights.voxen.io/posts/review-rating-monitoring-automation/): A practical guide to automatically collecting store reviews across platforms like Naver, Google and delivery apps, prioritizing negative reviews and alerting staff.
 
 ## Article Archive
 Older articles remain discoverable through https://insights.voxen.io/sitemap.xml and https://insights.voxen.io/feed.xml.
