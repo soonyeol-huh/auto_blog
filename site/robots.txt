@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://insights.voxen.io/sitemap.xml
