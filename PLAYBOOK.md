@@ -58,6 +58,7 @@ python3 scripts/topic_queue.py next
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <link rel="canonical" href="https://insights.voxen.io/posts/{{slug}}/">
 <link rel="stylesheet" href="/assets/style.css">
+<script defer src="/assets/analytics.js"></script>
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{제목}}">
 <meta property="og:description" content="{{OG 설명}}">
